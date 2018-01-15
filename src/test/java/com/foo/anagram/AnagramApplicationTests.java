@@ -43,7 +43,7 @@ public class AnagramApplicationTests {
                 .andExpect(jsonPath("$.paste", contains("pates","peats","septa","spate","tapes","tepas")))
                 .andExpect(jsonPath("$.kinship", contains("pinkish")))
                 .andExpect(jsonPath("$.enlist", contains("elints","inlets","listen","silent","tinsel")))
-                .andExpect(jsonPath("$.boaster", contains("boaters","borates","rebatos","sorbate")))
+                .andExpect(jsonPath("$.boaster", contains("Barotse","boaters","borates","rebatos","sorbate")))
                 .andExpect(jsonPath("$.fresher", contains("refresh")))
                 .andExpect(jsonPath("$.sinks", contains("skins")))
                 .andExpect(jsonPath("$.knits", contains("skint","stink","tinks")))

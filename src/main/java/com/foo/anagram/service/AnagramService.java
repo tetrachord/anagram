@@ -24,8 +24,6 @@ public class AnagramService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AnagramService.class);
 
-//    private List<String> wordList;
-
     private Map<String, List<String>> anagramsMap;
 
 
@@ -57,7 +55,7 @@ public class AnagramService {
         List<String> anagrams = anagramsMap.get(sortedWord);
 
         if (anagrams == null) {
-            return new ArrayList<String>();
+            return new ArrayList<>();
         }
 
         return anagrams.stream()
@@ -68,7 +66,7 @@ public class AnagramService {
     private String sort(String str){
 
         String lowerCaseWord = str.toLowerCase();
-        char[] letters = str.toCharArray();
+        char[] letters = lowerCaseWord.toCharArray();
         Arrays.sort(letters);
         return new String(letters);
     }
